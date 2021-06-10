@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# React+Ant-Design FORTNITE-SHOP 
+Ссылка на рабочее приложение [DEMO](https://erdeni03.github.io/fortnite-shop/)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
