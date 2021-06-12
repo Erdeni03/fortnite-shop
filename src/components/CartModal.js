@@ -1,13 +1,11 @@
+import {FortniteContext} from "../context/context"
+import {useContext} from "react"
 import {Modal, List, Typography, Tooltip, Button} from "antd"
 import {MinusOutlined, PlusOutlined, DeleteOutlined} from "@ant-design/icons"
-export const CartModal = ({
-  handleCartShow,
-  isCart,
-  order,
-  deleteCart,
-  incCart,
-  decCart
-}) => {
+export const CartModal = () => {
+  const {order, deleteCart, incCart, decCart, isCart, handleCartShow} =
+    useContext(FortniteContext)
+
   const totalPrice = order.reduce((sum, el) => {
     return sum + el.price * el.quantity
   }, 0)

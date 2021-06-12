@@ -1,15 +1,13 @@
+import {useContext} from "react"
+import {FortniteContext} from "../context/context"
 import {Card, Col, Button, Typography, Image} from "antd"
+
 const {Text} = Typography
 const {Meta} = Card
 export const CardItem = props => {
-  const {
-    id,
-    name,
-    description,
-    full_background,
-    price,
-    addToCart = Function.prototype
-  } = props
+  const {id, name, description, full_background, price} = props
+
+  const {addToCart = Function.prototype} = useContext(FortniteContext)
 
   const styles = {
     width: "340px",
